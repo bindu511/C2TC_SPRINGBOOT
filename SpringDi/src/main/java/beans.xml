@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean id ="MathcheatReference" class="com.cg.evaluation.Mathcheat"/>
+  
+  
+<bean id = "s2" class="com.cg.evaluation.Student">
+<property name="chit" ref="MathcheatReference"/>
+</bean>
+
+<bean id = "s3" class="com.cg.evaluation.AnotherStudent">
+<property name="chit" ref="MathcheatReference"/>
+
+</bean>
+    
+  
+</beans>   
